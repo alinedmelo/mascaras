@@ -14,7 +14,7 @@ function execmascara(){
     v_obj.value=v_fun(v_obj.value)
 }
 
-// Montando a máscara com regex
+// Aplicando regras da máscara com regex
 function mascaraTel(v){
     v=v.replace(/\D/g,"");                  //Remove tudo o que não é dígito
     v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
