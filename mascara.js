@@ -1,17 +1,17 @@
 
 // Selecionando campo e aplicando ID
-var telefone = document.querySelector('[data-mapping="telefone"] input');
+var telefone = document.querySelector('[attribute="example"]');
 telefone.id = 'telefone';
 
-var cpf = document.querySelector('[data-mapping="cpf"] input');
+var cpf = document.querySelector('[attribute="example"]');
 cpf.id = 'cpf';
 
 
 /* Máscaras ER */
 function mascara(o,f){
-    v_obj=o
-    v_fun=f
-    setTimeout("execmascara()",1)
+    var v_obj=o;
+    var v_fun=f;
+    setTimeout("execmascara()",1);
 }
 function execmascara(){
     v_obj.value=v_fun(v_obj.value)
